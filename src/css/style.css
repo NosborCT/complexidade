@@ -29,11 +29,39 @@ main .personagem .imagem {
   object-fit: cover;
 }
 
+.card-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.card{
+  width: 325px;
+  overflow: hidden;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+.card-content{
+  color: #ffffff;
+  font-family: "Rubik";
+  line-height: 24px;
+  font-size: 18px;
+  text-align: center;
+}
 .conteudo {
   position: absolute;
   top: 100px;
   left: 500px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
