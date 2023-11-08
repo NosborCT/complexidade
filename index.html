@@ -26,7 +26,7 @@
                         <h3 style=" bottom: 100px; padding-bottom: 5px; font-family: 'Secular One'; font-size: 26px;" > CONTEÚDO N1 </h3>
                         <p>
                             Neste site iremos ver o que fora passado na n1, para navegar entre os conteudos utilize os botoes ao lado: <br/>
-                            <---------------<br/>
+                            <---------------<br/> </p>
                     </div>
                 </div>
                 </div>          
@@ -110,14 +110,113 @@
             </div>       
     </div>
         </div>
+    </div>
         <div class="personagem">
             <img class="imagem" src="./src/imagens/wallhaven-0j382m.jpg" alt="anonymous image">
 
-            <div class="conteudo">
-                <i class="logo"> </i>
-                <h2 class="nome-personagem"></h2>
-                <p class="descricao">               
-                    </p></div>
+
+            <div class="card-container" style="position: absolute; top: 100px; left:200px; height: 300px;"  >
+                <div class="card">
+                    <div class="card-content" style="padding: 20px;">
+                        <h3 style=" bottom: 100px; padding-bottom: 5px; font-family: 'Secular One'; font-size: 20px;" > Analise de complexidade pessimista:</h3>
+                        <p>
+                            Cp = [a] := máx { desemp[a](d) / tam (d)= n}; <br />
+
+                            Cp ≤[a] := máx { desemp [a](d) / tam (d)≤ n};<br />
+
+                            Onde desemp [a] := custo (exec [a](d)).  <br /> </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content" style="padding: 20px;">
+                        <h3 style=" bottom: 100px; padding-bottom: 5px; font-family: 'Secular One'; font-size: 20px;" > </h3>
+                        <ul >
+                            <li>Cp → complexidade pessimista</li>
+                            <li>a → algoritimo</li>
+                            <li>desemp → desempenho</li>
+                            <li>tam → tamanho da entrada</li>
+                            <li>d → entrada de dados de um conjunto D e IR =.</li>
+                            <li>= > tam(d) = n </li>
+
+
+                        </ul> 
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content" style="padding: 20px;">
+                        <h3 style=" bottom: 100px; padding-bottom: 5px; font-family: 'Secular One'; font-size: 20px;" ></h3>
+                        <p>
+                            considere duas funcoes f e g de um conjunto D de dados em IR. Sua soma pontual, dada por <br/>
+
+                            (f+g)(d):= k(d) + g(d), para cada d e D <br/>
+
+                            Logo, seu máximo e minimo pontuais são dados por : <br/>
+
+                            Máx (f,g)(d) := Máx [f(d), g (d)] e <br/>
+
+                            Min (f,g)(d) := min [f(d),g(d)]<br/>
+
+                            ex.: f (n) := n + 1 e g(n):= n^2, de IN → IN <br/> </p>
+                    </div>
+                </div>
+
+
+                <table>
+                    <tr>
+                      <th>N</th>
+                      <th>0</th>
+                      <th>1</th>
+                      <th>2</th>
+                      <th>3</th>
+                      <th>n>3</th>
+                    </tr>
+                    <tr>
+                      <td>f(n)</td>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>4</td>
+                      <td>n+1</td>
+                    </tr>
+                    <tr>
+                        <td>f(g)</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>9</td>
+                        <td>n²</td>
+                      </tr>
+
+                      <tr>
+                        <td>(f+g)(n)</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>7</td>
+                        <td>13</td>
+                        <td>n+1+n²</td>
+                      </tr>
+
+                      <tr>
+                        <td>Máx (f,g)(n)</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>9</td>
+                        <td>n²</td>
+                      </tr>
+                      <tr>
+                        <td>min (f,g)(n)</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>n+1</td>
+                      </tr>
+
+                  </table>
+
+
+                </div> 
         </div>
         <div class="personagem">
             <img class="imagem" src="./src/imagens/wallhaven-0j382m.jpg" alt="anonymous image">

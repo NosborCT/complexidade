@@ -56,6 +56,28 @@ main .personagem .imagem {
   font-size: 18px;
   text-align: center;
 }
+
+table {
+  font-family: "Rubik";
+  border-collapse: collapse;
+  width: 625px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 .lista1 {
   color: #ffffff;
   font-family: "Rubik";
@@ -89,7 +111,7 @@ main .personagem .imagem {
 }
 
 ul li {
-  list-style-type: none;
+  list-style-type:none;
 }
 
 .botoes .botao img {
@@ -100,3 +122,6 @@ ul li {
   transform: scale(1.2);
   box-shadow: 0 0 10px #d9d9d9;
 }
+
+
+
