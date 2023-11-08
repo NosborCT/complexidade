@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +12,6 @@
     <link rel="stylesheet" href="./src/css/responsive.css">
     <title>Complexidade </title>
 </head>
-
 <body>
 
     <main class="personagens">
@@ -21,20 +19,23 @@
         <div class="personagem selecionado">
             <img class="imagem" src="./src/imagens/wallhaven-0j382m.jpg" alt="anonymous image">
 
-            <div class="conteudo" style="min-height: 300px;max-width: 300px;position:absolute;margin-left:280px;margin-top:200px;width:300px;height:140px;z-index:1; text-align: center;" >
-                <i class="logo"> </i>
-                <h2 class="nome-personagem" style="position: relative; bottom: 100px;">Conteudo N1</h2>
-                <p class="descricao" style="position: relative; bottom: 70px;"> 
-                    Neste site iremos ver o que fora passado na n1, para navegar entre os conteudos utilize os botoes ao lado:
-                
-            </div>
+
+            <div class="card-container" style="position: absolute; top: 25%; left: 40%;" >
+                <div class="card">
+                    <div class="card-content" style="padding: 20px;">
+                        <h3 style=" bottom: 100px; padding-bottom: 5px; font-family: 'Secular One'; font-size: 26px;" > CONTEÚDO N1 </h3>
+                        <p>
+                            Neste site iremos ver o que fora passado na n1, para navegar entre os conteudos utilize os botoes ao lado: <br/>
+                            <---------------<br/>
+                    </div>
+                </div>
+                </div>          
         </div>
-
-
+        </div>
+        </div>
         <div class="personagem" style="position: absolute; width: 100%; height: 100%;" >
             <img class="imagem" src="./src/imagens/wallhaven-0j382m.jpg" alt="anonymous image">
-            <div class="card-container" style="position: absolute; top: 100px; left: 500px;
-            " >
+            <div class="card-container" style="position: absolute; top: 100px; left: 15%;" >
                 <div class="card">
                     <div class="card-content" style="padding: 20px;">
                         <h3 style=" bottom: 100px; padding-bottom: 5px;" >O que é a complexidade de software ?</h3>
@@ -45,7 +46,6 @@
                                 * Tempo de acesso <br />  
                                 * Recursos → Processamento <br /> 
                                            → Armazenamento <br /></p>
-
                     </div>
                 </div>
                 <div class="card">
@@ -53,14 +53,63 @@
                         <h3 style=" bottom: 100px; padding-bottom: 5px;">Polinomial de 1º Grau:</h3>
                         <p>
                             f(x) = 0|f(x) = 3x - 6 <br /> 
-                             3x-6 = 0 -> 3x=6 -> x=2 </p>
-                                           
+                             3x-6 = 0 -> 3x=6 -> x=2 </p>                                          
                     </div>
                 </div>
-                
+                <div class="card">
+                    <div class="card-content" style="padding: 20px;">
+                        <h3 style=" bottom: 100px; padding-bottom: 5px;" >Ordens Assintóticas:</h3>
+                        <p>
+                            ---->
+                        
+                        
+                        </p>
+
+                    </div>               
             </div>
+                <div class="card">
+                    <div class="card-content" style="padding: 20px;">
+                        <h3 style=" bottom: 100px; padding-bottom: 5px;" ></h3>
+                        <p>
+                            À media em que o argumento de uma função cresce ou diminui infinitamente, isto é, fica muito grande ou muito pequeno, realizamos uma analíse assitótica da função para determinar sua complexiadade por meio de uma representação generalista. Essa representação segue três notações principais:
+                        
+                        
+                        </p>
+
+                    </div>       
+            </div>
+            <div class="card">
+                <div class="card-content" style="padding: 20px;">
+                    <h3 style=" bottom: 100px; padding-bottom: 5px;" ></h3>
+                    <p>
+                        O(f(n)), Ω ( x ( n ) ) , o( f ( n ) ) <br/>
+                        O (f(n)) → BG-o <br/>
+                        essa notação define um limite superior assintótico para a função <br/>
+                    
+                    
+                    </p>
+
+                </div>       
         </div>
 
+        <div class="card">
+            <div class="card-content" style="padding: 20px;">
+                <h3 style=" bottom: 100px; padding-bottom: 5px;" ></h3>
+                <p>
+                    Ω (f(n)) → notação Ω essa notação define um limite inferior assintotico para a função. <br/>
+
+                    o(f(n)) = lim f(n) n→infinito <br/>
+                    
+                    O(f(n)=0) (n²) = n² <br/>
+                    
+                    polinomial de segundo grau, custo quadrático <br/>
+                
+                
+                </p>
+
+            </div>       
+    </div>
+        </div>
         <div class="personagem">
             <img class="imagem" src="./src/imagens/wallhaven-0j382m.jpg" alt="anonymous image">
 
@@ -70,8 +119,6 @@
                 <p class="descricao">               
                     </p></div>
         </div>
-
-        
         <div class="personagem">
             <img class="imagem" src="./src/imagens/wallhaven-0j382m.jpg" alt="anonymous image">
 
@@ -81,48 +128,29 @@
                 <p class="descricao">               
                     </p></div>
         </div>
-
-       
-
-      
-
     </main>
-
-
-
     <ul class="botoes">
         <li>
             <button class="botao selecionado">
                 <img src="./src/imagens/tripulacao-chopper.jpg" alt="redes">
             </button>
-        </li>
-        
+        </li>       
         <li>
             <button class="botao">
                 <img src="./src/imagens/tripulacao-chopper.jpg" alt="redes">
             </button>
         </li>
-
         <li>
             <button class="botao">
                 <img src="./src/imagens/tripulacao-chopper.jpg" alt="redes">
             </button>
-        </li>
-
-        
-
+        </li>    
         <li>
             <button class="botao">
                 <img src="./src/imagens/tripulacao-chopper.jpg" alt="redes">
             </button>
-        </li>
-
-        
-
-       
+        </li>     
     </ul>
-
     <script src="./src/js/index.js"></script>
 </body>
-
 </html>
