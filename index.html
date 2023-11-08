@@ -221,12 +221,181 @@
         <div class="personagem">
             <img class="imagem" src="./src/imagens/wallhaven-0j382m.jpg" alt="anonymous image">
 
-            <div class="conteudo">
-                <i class="logo"> </i>
-                <h2 class="nome-personagem"></h2>
-                <p class="descricao">               
-                    </p></div>
+
+            <div class="card-container" style="position: absolute; top: 10%; left: 25%;" >
+                <div class="card">
+                    <div class="card-content" style="padding: 20px;">
+                        <h3 style=" bottom: 100px; padding-bottom: 5px; font-family: 'Secular One'; font-size: 26px;" > EXEMPLO 1 </h3>
+                        <p>
+                            fun main (){
+                                for (i in j1:n-1){ //n-1 <br/>
+                                    for (j in 1:n-1){ //n-i <br/>
+                                        if (A[j] > A [j+i]){ //n-i <br/>
+                                            temp <- A [j] //1 <br/>
+                                            A[j] <- A[j+1] //1 <br/>
+                                            A [j+1] <- temp //1 <br/>
+                                } //0 <br/>
+                                } //0 <br/> 
+                                } //0<br/> 
+                                retorn saida () //1 <br/>
+                                } //0 <br/>
+                                <br/> </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content" style="padding: 20px;">
+                        <h3 style=" bottom: 100px; padding-bottom: 5px; font-family: 'Secular One'; font-size: 26px;" > RESOLUÇÃO</h3>
+                        <p>
+                            f(n) = (n-1)(n-i+n-i+3)+1 <br/>
+
+                            f(n) = (n-1)(2n-2i+3)+1 <br/>
+
+                            f(n) = (2n² - 2in + 3n -2n +2i-3)+1 <br/>
+
+                            f(n) = 2n² +2in+n+2i-2 <br/>
+
+                            O(F(n)=o(n²)) <br/>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content" style="padding: 20px;">
+                        <h3 style=" bottom: 100px; padding-bottom: 5px; font-family: 'Secular One'; font-size: 26px;" > EXEMPLO 2 </h3>
+                        <p>
+                            Bruno ← quicksort → f <br/>
+
+                            Diniz ← arvore binaria →  <br/>
+                            
+                            d1 = 5<br/>
+                            
+                            d2 = 5 <br/>
+                            
+                            min (f(d)) → omega(f)<br/>
+                            
+                            min (g(d)) → omega(g)<br/>
+                            
+                            min(omega(f),omega(g)) → omega(p)<br/>
+                            
+                            f(d) → Cp (f)<br/>
+                            
+                            g(d) → Cp(g)<br/>
+                            
+                            Cp(f+g):= Cp(f) + Cp(g)<br/>
+                            
+                            f(n):= 2n+1<br/>
+                            
+                            g(n):= 4n² -1<br/>
+                            
+                            a) n=tam(d)<br/>
+                            
+                            Cp [a](d):= max {desemp [a](d)}<br/>
+                            
+                            Cp [a] (d) := max {desemp (f) + desemp (g)}<br/>
+                            
+                            Cp [a](d):= max {(2n+1)+(4n²-1)/ tam(d)=n}<br/>
+                            
+                            Cp [a](d):= max{4n² +2n / tam (d)=n}<br/>
+                            
+                            logo, O (4n² + 2n )= O (n²)<br/>
+                        </p>
+                    </div>
+                </div>
+                    
+            
+            </div> 
         </div>
+        <div class="personagem">
+            <img class="imagem" src="./src/imagens/wallhaven-0j382m.jpg" alt="anonymous image">
+
+
+            <div class="card-container" style="position: absolute; top: 10%; left: 15%;" >
+                <div class="card">
+                    <div class="card-content" style="padding: 20px;">
+                        <h3 style=" bottom: 100px; padding-bottom: 5px; font-family: 'Secular One'; font-size: 26px;" > COMPLEXIDADE MÉDIA: </h3>
+                        <p>
+                            - Cm [a](n):= ∑ [prob(d). desemp [a](d)] <br/>
+                            - onde dn = {d E D | tam (d)=n}<br/>
+                            - prob (d) é a probalidade de ocorrer a entrada d de Dn<br/>
+                            - desemp [a](d) = custo (exec [a](d)) do algoritimo a com entrada d. <br/></p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content" style="padding: 20px;">
+                        <h3 style=" bottom: 100px; padding-bottom: 5px; font-family: 'Secular One'; font-size: 26px;" > EXEMPLO: </h3>
+                        <p>
+                            - QuickSort:<br/>
+                            - Função QuickSort (A:V,m,p:Nat)→ A:V {Ordenação por concatenação}<br/>
+                            - {Entrada : Vetor A[m..p](A Ordenar)<br/>
+                            - Saida: Vetor A:V (o vetor de entrada em ordem crescente)}<br/>
+                            - sorte V:= vetor [m..p]<br/>
+                        </p>
+                    </div>
+                </div> 
+                <div class="card">
+                    <div class="card-content" style="padding: 20px;">
+                        <h3 style=" bottom: 100px; padding-bottom: 5px; font-family: 'Secular One'; font-size: 26px;" >  </h3>
+                        <p>
+                            k <- ind (pivo,A,m,p); {inicializak com indice do pivo <br/>
+                                se k=o                 { testa se todos os elementos sao iguais}<br/>
+                                    entao retorne-saida (a) { vetor ja esta classificado }<br/>
+                                    senao                   { inicia a classificação }<br/>
+                                        troca (A[m],A[K]);    { troca o primeiro com o pivo }<br/>
+                                        patrociona(A,m,p,j);  { particiona na posição j }<br/>
+                                        l' <- quicksort (A,m,j-1); { classifica inicio (tamanho j-m) }<br/>
+                                        l''<- quicksort (a,j,p); { classifica final (tamanho p-j+1) }<br/>
+                                        l <- concat (l',l'');    { concatena partes classificadas }<br/>
+                                        retorne-saida (A);       { da saida concatenada }<br/>
+                                        fim-senao;               { fim da classificação }<br/>
+                                    fim-se                     {k=o ?}<br/>
+                                fim-funcao                   { fim do algoritimo }<br/>
+                        </p>
+                    </div>
+                </div> 
+                <div class="card">
+                    <div class="card-content" style="padding: 20px;">
+                        <h3 style=" bottom: 100px; padding-bottom: 5px; font-family: 'Secular One'; font-size: 26px;" >  </h3>
+                        <p>
+                            - Prob(i) = 2i / n(n-1)<br/>
+                            - n-1 ∑ i = 1 { Cn [Pivopartic](n) + Cn[Quicksort](i)+ Cn [QuickSort](n-1) }<br/>
+                                - para n>1, temos:<br/>
+                                    - T(n) = n-1∑ i=1 (2i / n(n-1)). [o(n)+t(i)+t(n-1)]<br/>
+                                    - T(n) = n-1∑ i=1 (2i / n(n-1)). [o(n)+t(i)+t(n-1)]<br/>
+                                    - T(n) = o(n)+(2/n-1) n-1∑ i=1 T (i)<br/>
+                                    - (2/n-1) n-1 ∑ i=1 T(i)= o (n logn) ⇒ Cm [quicksort](n) = o(n logn)<br/>
+                        </p>
+                    </div>
+                </div> 
+                    </div>
+                </div>
+
+
+                <div class="personagem">
+                    <img class="imagem" src="./src/imagens/wallhaven-0j382m.jpg" alt="anonymous image">
+        
+        
+                    <div class="card-container" style="position: absolute; top: 10%; left: 25%;" >
+                        <div class="card">
+                            <div class="card-content" style="padding: 20px;">
+                                <h3 style=" bottom: 100px; padding-bottom: 5px; font-family: 'Secular One'; font-size: 26px;" > EXEMPLO 1 </h3>
+                                <p>
+                                    fun main (){
+                                        for (i in j1:n-1){ //n-1 <br/>
+                                            for (j in 1:n-1){ //n-i <br/>
+                                                if (A[j] > A [j+i]){ //n-i <br/>
+                                                    temp <- A [j] //1 <br/>
+                                                    A[j] <- A[j+1] //1 <br/>
+                                                    A [j+1] <- temp //1 <br/>
+                                        } //0 <br/>
+                                        } //0 <br/> 
+                                        } //0<br/> 
+                                        retorn saida () //1 <br/>
+                                        } //0 <br/>
+                                        <br/> </p>
+                            </div>
+                        </div> 
+                            </div>
+                        </div>
     </main>
     <ul class="botoes">
         <li>
@@ -248,7 +417,18 @@
             <button class="botao">
                 <img src="./src/imagens/tripulacao-chopper.jpg" alt="redes">
             </button>
-        </li>     
+        </li>  
+        <li>
+            <button class="botao">
+                <img src="./src/imagens/tripulacao-chopper.jpg" alt="redes">
+            </button>
+        </li> 
+        <li>
+            <button class="botao">
+                <img src="./src/imagens/tripulacao-chopper.jpg" alt="redes">
+            </button>
+        </li>
+           
     </ul>
     <script src="./src/js/index.js"></script>
 </body>
