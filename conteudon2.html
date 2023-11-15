@@ -20,15 +20,102 @@
             <img class="imagem" src="./src/imagens/wallhaven-0j382m.jpg" alt="anonymous image">
 
 
-            <div class="card-container" style="position: absolute; top: 25%; left: 40%;" >
+            <div class="card-container" style="position: absolute; top: 5%; left: 12%;" >
                 <div class="card">
                     <div class="card-content" style="padding: 20px;">
-                        <h3 style=" bottom: 100px; padding-bottom: 5px; font-family: 'Secular One'; font-size: 26px;" > CONTEÚDO N1 </h3>
-                        <p>
-                            Neste site iremos ver o que fora passado na n1, para navegar entre os conteudos utilize os botoes ao lado: <br/>
-                            <---------------<br/> </p>
+                        <h3 style=" bottom: 100px; padding-bottom: 5px; font-family: 'Secular One'; font-size: 26px;" > ORDEM ASSINTÓTICA</h3>
+                        <p style="text-align: left;">
+                            A ordem assintótica é uma ferramenta usada em ciência da computação para comparar a eficiência de algoritmos. Ela permite que ignoremos as diferenças de eficiência que são irrelevantes para grandes entradas. <br/>
+                            <br/>
+                            Para entender a ordem assintótica, precisamos primeiro entender o que significa "crescimento assintótico". O crescimento assintótico de uma função f(n) é o seu comportamento a medida que n tende ao infinito.  <br/> 
+                            <br/> 
+                            Por exemplo, a função f(n) = n^2 cresce assintoticamente mais rápido que a função g(n) = n. Isso significa que, para grandes valores de n, f(n) será muito maior que g(n).<br/> 
+                        
+                        
+                        </p>
                     </div>
                 </div>
+
+                <div class="card">
+                    <div class="card-content" style="padding: 20px;">
+                        <p style="text-align: left;">
+                            A ordem assintótica de uma função é representada por uma letra maiúscula. As letras mais comuns são O, Ω e Θ.<br/>    
+                            <br/>                  
+                            <ul >
+                                <li style="  list-style-type:square; text-align: left;" >O(g(n)) significa que f(n) está na ordem de no máximo g(n). Isso significa que existe uma constante c tal que f(n) ≤ c * g(n) para grandes valores de </li>
+                                <br/>
+                                <li style="  list-style-type:square; text-align: left;" >Ω(g(n)) significa que f(n) está na ordem de no mínimo g(n). Isso significa que existe uma constante c tal que f(n) ≥ c * g(n) para grandes valores de n. </li>
+                                <br/>
+                                <li style="  list-style-type:square; text-align: left;" >Θ(g(n)) significa que f(n) está na ordem de g(n). Isso significa que existem constantes c1 e c2 tais que c1 * g(n) ≤ f(n) ≤ c2 * g(n) para grandes valores de n.</li>   
+                                
+                            </ul> 
+
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-content" style="padding: 20px;">
+                        <p style="text-align: left;">
+                            Por exemplo, a ordem assintótica do tempo de execução do algoritmo de ordenação por inserção é O(n^2). Isso significa que, para grandes entradas, o tempo de execução do algoritmo será proporcional ao quadrado do tamanho da entrada.<br/>   
+                            <br/>   
+                            A ordem assintótica é uma ferramenta importante para comparar a eficiência de algoritmos. Ela permite que ignoremos as diferenças de eficiência que são irrelevantes para grandes entradas.<br/>    
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content" style="padding: 20px;">
+                        <p style="text-align: left;">
+                            Aqui estão alguns exemplos de ordens assintóticas comuns:<br/>    
+                            <br/>                  
+                            <ul >
+                                <li style="  list-style-type:square; text-align: left;" >OO(1): Constante </li>
+                                <br/>
+                                <li style="  list-style-type:square; text-align: left;" >O(log n): Logarítmica </li>
+                                <br/>
+                                <li style="  list-style-type:square; text-align: left;" >O(n): Linear</li>
+                                <br/>
+                                <li style="  list-style-type:square; text-align: left;" >O(n log n): Logarítmica quadrática</li>  
+                                <br/>
+                                <li style="  list-style-type:square; text-align: left;" >O(n^2): Quadrada </li>  
+                                <br/>
+                                <li style="  list-style-type:square; text-align: left;" >O(n^3): Cúbica </li> 
+                                <br/>
+                                <li style="  list-style-type:square; text-align: left;" >O(n^k): Polinomial </li> 
+                                <br/>
+                                <li style="  list-style-type:square; text-align: left;" >O(2^n): Exponencial </li> 
+                                
+                            </ul> 
+
+                        </p>
+                    </div>
+                </div>
+                <a href='https://joaoarthurbm.github.io/eda/posts/analise-assintotica/'><button class="btn" style="position: relative;
+                    display: inline-block;
+                    margin: 15px;
+                    padding: 15px 30px;
+                    text-align: center;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    text-decoration: none;
+                    color: #dddddd;
+                    background: transparent;
+                    cursor: pointer;
+                    transition: ease-out 0.5s;
+                    border: 2px solid rgb(252, 70, 100);
+                    border-radius: 10px;
+                    box-shadow: inset 0 0 0 0 #725AC1;" 
+
+                    button:hover {
+                        color: white;
+                        box-shadow: inset 0 -100px 0 0 #725AC1;
+                      }
+                      
+                      button:active {
+                        transform: scale(0.9);
+                      }
+                    >SAIBA MAIS </button></a>
                 </div>          
         </div>
         </div>
@@ -379,22 +466,7 @@
                             <div class="card-content" style="padding: 20px;">
                                 <h3 style=" bottom: 100px; padding-bottom: 5px; font-family: 'Secular One'; font-size: 26px;" > N2 </h3>
                                 <p>Para ter acesso ao conteúdo da n2 basta clicar no botão a seguir:</p>
-                                <a href='conteudon2.html'><button class="btn" style="position: relative;
-                                    display: inline-block;
-                                    margin: 15px;
-                                    padding: 15px 30px;
-                                    text-align: center;
-                                    font-size: 18px;
-                                    letter-spacing: 1px;
-                                    text-decoration: none;
-                                    color: #725AC1;
-                                    background: transparent;
-                                    cursor: pointer;
-                                    transition: ease-out 0.5s;
-                                    border: 2px solid #725AC1;
-                                    border-radius: 10px;
-                                    box-shadow: inset 0 0 0 0 #725AC1;" >N2</button></a>
-                            </div>
+                                </div>
                         </div> 
                             </div>
                         </div>
