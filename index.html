@@ -331,52 +331,7 @@
                     </div>
                 </div>
 
-                <div class="card">
-                    <div class="card-content" style="padding: 20px;">
-                        <h3 style=" bottom: 100px; padding-bottom: 5px; font-family: 'Secular One'; font-size: 26px;" > EXEMPLO: </h3>
-                        <p>
-                            - QuickSort:<br/>
-                            - Função QuickSort (A:V,m,p:Nat)→ A:V {Ordenação por concatenação}<br/>
-                            - {Entrada : Vetor A[m..p](A Ordenar)<br/>
-                            - Saida: Vetor A:V (o vetor de entrada em ordem crescente)}<br/>
-                            - sorte V:= vetor [m..p]<br/>
-                        </p>
-                    </div>
-                </div> 
-                <div class="card">
-                    <div class="card-content" style="padding: 20px;">
-                        <h3 style=" bottom: 100px; padding-bottom: 5px; font-family: 'Secular One'; font-size: 26px;" >  </h3>
-                        <p>
-                            k <- ind (pivo,A,m,p); {inicializak com indice do pivo <br/>
-                                se k=o                 { testa se todos os elementos sao iguais}<br/>
-                                    entao retorne-saida (a) { vetor ja esta classificado }<br/>
-                                    senao                   { inicia a classificação }<br/>
-                                        troca (A[m],A[K]);    { troca o primeiro com o pivo }<br/>
-                                        patrociona(A,m,p,j);  { particiona na posição j }<br/>
-                                        l' <- quicksort (A,m,j-1); { classifica inicio (tamanho j-m) }<br/>
-                                        l''<- quicksort (a,j,p); { classifica final (tamanho p-j+1) }<br/>
-                                        l <- concat (l',l'');    { concatena partes classificadas }<br/>
-                                        retorne-saida (A);       { da saida concatenada }<br/>
-                                        fim-senao;               { fim da classificação }<br/>
-                                    fim-se                     {k=o ?}<br/>
-                                fim-funcao                   { fim do algoritimo }<br/>
-                        </p>
-                    </div>
-                </div> 
-                <div class="card">
-                    <div class="card-content" style="padding: 20px;">
-                        <h3 style=" bottom: 100px; padding-bottom: 5px; font-family: 'Secular One'; font-size: 26px;" >  </h3>
-                        <p>
-                            - Prob(i) = 2i / n(n-1)<br/>
-                            - n-1 ∑ i = 1 { Cn [Pivopartic](n) + Cn[Quicksort](i)+ Cn [QuickSort](n-1) }<br/>
-                                - para n>1, temos:<br/>
-                                    - T(n) = n-1∑ i=1 (2i / n(n-1)). [o(n)+t(i)+t(n-1)]<br/>
-                                    - T(n) = n-1∑ i=1 (2i / n(n-1)). [o(n)+t(i)+t(n-1)]<br/>
-                                    - T(n) = o(n)+(2/n-1) n-1∑ i=1 T (i)<br/>
-                                    - (2/n-1) n-1 ∑ i=1 T(i)= o (n logn) ⇒ Cm [quicksort](n) = o(n logn)<br/>
-                        </p>
-                    </div>
-                </div> 
+               
                     </div>
                 </div>
 
